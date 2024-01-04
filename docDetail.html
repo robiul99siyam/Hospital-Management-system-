@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+</head>
+
+<body class=" m-auto">
+    <!-- nav here  -->
+    <header>
+
+        <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-bottom-sm sticky-top">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img class="w-25" src="./images/logo.png" alt="">
+                    <h3>SamartCare</h3>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./login.html">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./resgister.html">Sing In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div
+            class="row mt-5 bg-body-tertiary container m-auto shadow-sm rounded p-5 mb-5 d-flex align-items-center benner-contaier">
+            <div class="col-6">
+                <img class="w-75 shadow rounded-circle border-dangers" src="./images/benner.png" alt="">
+            </div>
+            <div class="col-6">
+                <h1 class="text-color-benner ">Provideing Quelaity <br> HealthCare </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero praesentium, est laudantium fuga
+                    molestias odit corporis reiciendis officiis corrupti culpa.</p>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- main part  -->
+
+    <main>
+
+        <!-- doctor all detils now  -->
+        <div id="details-doc" class="container ">
+
+        </div>
+
+
+        <!-- doctor reviews now  -->
+
+        <div class="container">
+            <div class="text-center mt-5 mb-4">
+                <h1>Client review</h1>
+                <p class="w-50 m-auto  text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    vitae aperiam nemo beatae dolor explicabo dolores ipsa soluta, repudiandae fugit. .</p>
+            </div>
+            <div
+                class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-first-visible">
+                <ul id="doctor-review" class="slider-container py-4">
+
+                </ul>
+
+                <button type="button" class="slider-nav" aria-label="Go left"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+                <div class="slider-indicators">
+                    <button class="active" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- modal area now  -->
+
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">submit</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="radio" name="status" value="offline">
+                        offline
+                        <input type="radio" name="status" value="online">
+                        online
+                        <br>
+                        <input id="systom" type="text" class="form-control" placeholder="Type Your symtom">
+
+
+                        <select id="timeLoad" class="form-select" aria-label="Default select example">
+                        
+                          </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button onclick="appoinment()" type="button" class="btn btn-primary">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer part  -->
+
+    <footer>
+        <footer class="bg-body-tertiary text-center text-lg-start sticky-bottom">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2020 Copyright:
+                <a class="text-body" href="https://mdbootstrap.com/">Hospital</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </footer>
+
+
+
+
+
+
+
+    <!-- srcipt file here now  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+
+    <script src="./docDetail.js"></script>
+</body>
+
+</html>
